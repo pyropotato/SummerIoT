@@ -1,5 +1,4 @@
-	
-#!/usr/bin/python
+#write T&H data to file
 import sys
 import Adafruit_DHT
 import datetime
