@@ -8,3 +8,4 @@ think_read.py - read from thinkspeak
 db_plot.py - plot graph using data from db
 db_dht.py - store dht data to db
 db_read.py - read data from db
+receive.py - upload data from serial to thinkspeak
