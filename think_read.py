@@ -1,7 +1,7 @@
 import os
 import time
 import urllib3   #https://urllib3.readthedocs.io/en/latest/
-import ast
+import json
 http = urllib3.PoolManager()
 x = input("Number of Entries: ")
 x = int(x)
@@ -10,7 +10,7 @@ try:
     response = http.request('GET',url)
     data = response.data #byte
     data = data.decode('utf8') #converting byte to string
-    data = ast.literal_eval(data) #convert to dictionary
+    data = json.loads(data) #convert to dictionary
     #print (data)
     ch_name = data["channel"]["name"] #channel name
     ch_id = data["channel"]["id"] #channel id
